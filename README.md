@@ -10,7 +10,7 @@
 
 SchedGen lets a user type something like:
 
-> "Schedule a call with Maria next Tuesday at 3pm to discuss the Q3 report"
+> "Schedule a call with Earl next Tuesday at 3pm to discuss the Q3 report"
 
 ...and the AI:
 1. Parses the intent and extracts structured meeting data (title, date, time, attendees, notes)
