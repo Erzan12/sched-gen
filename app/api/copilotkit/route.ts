@@ -11,9 +11,11 @@ import OpenAI from "openai";
 // This keeps us free to swap providers later (OpenRouter, Ollama, etc.)
 // by only changing baseURL + apiKey + model — no code changes needed.
 const groqClient = new OpenAI({
-    apiKey: process.env.NODE_ENV,
+    apiKey: process.env.GROQ_API_KEY,
     baseURL: "https://api.groq.com/openai/v1",
 })
+
+// console.log("Groq key loaded:", process.env.GROQ_API_KEY?.slice(0, 6), process.env.GROQ_API_KEY?.length)
 
 const serviceAdapter = new OpenAIAdapter({
     openai: groqClient,
