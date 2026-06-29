@@ -76,7 +76,7 @@ npm install
 
 ### 3. Install core dependencies
 ```bash
-npm install @copilotkit/react-core @copilotkit/react-ui @copilotkit/runtime
+npm install @copilotkit/react-core @copilotkit/react-ui openai @copilotkit/runtime
 npm install groq-sdk date-fns
 npm install -D tailwindcss postcss autoprefixer
 ```
